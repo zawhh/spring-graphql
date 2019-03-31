@@ -1,10 +1,8 @@
 package com.brian.springgraphql.controller;
 
 import com.brian.springgraphql.model.User;
-import com.brian.springgraphql.repository.UserRepository;
 import com.brian.springgraphql.service.UserService;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -31,7 +29,7 @@ public class Query implements GraphQLQueryResolver {
         return this.userService.getUser(id);
     }
 
-    public Optional<User> userzero() {
+    public Optional<User> userone() {
         return this.userService.getUser(1);
     }
 }

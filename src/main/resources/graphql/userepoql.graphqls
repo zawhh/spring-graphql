@@ -1,8 +1,3 @@
-schema {
-    query: Query
-    mutation: Mutation
-}
-
 type User {
 	login: String!,
 	id: ID!,
@@ -12,7 +7,7 @@ type User {
 type Query {
 	users(first:ID, last: ID): [User]
 	user(id: ID!): User
-	userzero: User
+	userone: User
 }
 
 type Mutation {
